@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Svetla Tileva home page</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<header>
+        <nav class="topnav" id="myTopnav">
+                <ul>
+
+                    <a href="index.html" ><img src="media/logost.png" alt="Svetla Tileva monogram" class="headerlogo "></a>
+                    <a href="mailto:stileva12@gmail.com" target="_blank" class="hire">Hire me</a>
+                    <li>
+                    <a href="dprojects.html" class="toright ">Design Projects</a>
+                    </li>
+                    <li>
+                    <a href="vprojects.html" class="toright ">Video Projects</a>
+                    </li>
+                    <li>
+                    <a href="about.html" class="toright ">About</a>
+                    </li>
+                    <li>
+                    <a href="contacts.html" class="toright">Contacts</a>
+                    </li>
+                    <li>
+                    <a href="javascript:void(0);" id="menu-icon" onclick="navToggle()">
+                        <i class="material-icons">menu</i></a>
+                    </li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <main>
+         <div class="grid-container">
+                    <div class="top grid-item allbox box1">
+                        <h2>
+                            <a href="dprojects.html" >
+                                Design Projects</a>
+                        </h2>
+                     </div>
+                     <div class="top grid-item allbox box2">
+                            <h2>
+                                <a href="about.html" >
+                                    About me</a>
+                            </h2>
+                     </div>
+                     <div class="bottom grid-item allbox box3">
+                            <h2>
+                                <a href="vprojects.html" >
+                                    Video Projects</a>
+                            </h2>
+
+
+
+                            <!-- <h1> Video Projects</h1>
+                            <div class="staff-grid col-4 centertext" id="vprojects">
+                                <div class="grid-item ">
+
+                                    <img src="media/award1.jpg" class="img-centered img-fluid" alt="interior design award">
+                                </div> -->
+
+
+
+                    </div>
+                    <div class="bottom grid-item allbox box4">
+                            <h2>
+                                <a href="contacts.html" >Contacts</a>
+                            </h2>
+                    </div>
+         </div>
+                <br><br> <br> <br>
+    </main>
+    <footer class="footgrid">
+
+        <div class="footgrid-item footborder"> copyright &copy; 2018 <p>stileva12@gmail.com </p></div>
+        <div class="footgrid-item footborder2">
+            <ul>
+                <li> <a href="index.html" class="active"> Home </a> </li>
+                <li> <a href="dprojects.html"> Design <br> Projects </a> </li>
+                <li> <a href="vprojects.html"> Video <br> Projects </a> </li>
+                <li> <a href="about.html" > About</a> </li>
+                <li> <a href="contacts.html"> Contacts</a> </li>
+            </ul>
+        </div>
+        <div class="footgrid-item footborder">Freelancer @MINC, <br> Malmö, Sweden </div>
+        <div class="footgrid-item footborder2">All rights reserved by Svetla Tileva</div>
+
+    </footer>
+    <script>
+
+
+            function navToggle() {
+                var x = document.getElementById("myTopnav");
+
+                if (x.className === "topnav") {
+                    x.className += " dropped";
+
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+        </script>
+
+</body>
+</html>

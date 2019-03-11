@@ -1,0 +1,336 @@
+/*style file for home page and om oss page by Priti */
+/*fonts related declaration*/
+@import url('https://fonts.googleapis.com/css?family=Arimo|Lato');
+
+/*general class declarations for the entire website*/
+body {
+    background-color: #f7f7f7;
+    margin-top: 10em;
+    font-family: Lato;
+}
+a{
+    text-decoration: none;
+    padding: 1em;
+    color: #f7f7f7;
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+.centertext {
+    text-align: center;
+    align-content: center;
+}
+
+
+.allbox {
+    /* this reusable class is used for background images*/
+    background-position: center;
+    background-size: cover;
+}
+.active {
+
+    background-color: #c6a530;
+    color: white;
+}
+.toright{
+    /*this reusable class is used to align an element to the right*/
+    margin-right: 1em;
+    float: right;
+}
+
+.goldborder {
+    max-width: 100vw;
+    padding: 2em;
+    border: 1px solid #c6a530;
+}
+/*Responsive nav bar declarations*/
+    nav a:visited{
+        color: black;
+    }
+
+    nav {
+
+        float: right;
+        padding-top: 1em;
+        padding-right: 1em;
+    }
+    .headerlogo {
+        vertical-align: middle;
+        height: 5em;
+        width: auto;
+    }
+    .topnav {
+        background-color: #f7f7f775;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .topnav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .topnav ul li {
+        display: inline;
+    }
+    .topnav ul li a {
+        color:black;
+        padding: 0.5em;
+        text-decoration: none;
+        display: none;
+    }
+    .topnav.dropped ul li a:hover {
+        background-color: #c6a530;
+        color: black;
+    }
+
+    .topnav ul li:first-child  a:hover {
+        background-color: #ffffff00;
+    }
+
+    .topnav ul li:first-child  a {
+        display: inline-block;
+        padding: 0;
+    }
+
+    #menu-icon {
+        margin-top: 2em;
+        margin-right: 2em;
+        float: right;
+        display: block;
+    }
+
+    .topnav.dropped ul li a {
+
+        display: block;
+
+    }
+
+    .topnav.dropped #menu-icon {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        background-color: #ffffff00;
+    }
+
+    .material-icons {
+        font-size: 1em;
+    }
+
+/*all footer related formatting*/
+footer ul{
+
+    margin: 0;
+    list-style: none;
+    padding-inline-start: 0em;
+}
+.footgrid {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+.footgrid-item {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    text-align: center;
+    font-size: 50%;
+}
+
+.footgrid-item ul li a:visited {
+    color: black;
+}
+
+.footborder {
+    background-color: #a1a1a1;
+    border: 1px solid #c6a530;
+}
+.footborder2 {
+    background-color: #cecece;
+    border: 1px solid #c6a530;
+}
+
+/* h2 formatting for home page top and bottom rows*/
+
+.top h2 {
+    top: 40vh;
+    transform: translateY(-50%);
+    margin: 30px 20px auto 30px;
+    font-family: Arimo;
+}
+.bottom h2 {
+    top: 85vh;
+    transform: translateY(-50%);
+    margin: 30px 20px auto 30px;
+    font-family: Arimo;
+
+}
+
+/* home page related classes*/
+.box1, .box3 {
+    background-color: #c6a530;
+}
+.box2, .box4 {
+    background-color: #c6a530ab;
+ }
+
+.box1:hover {
+        background-image: url("../media/zlatan_klient_1.jpg");
+}
+.box2:hover {
+    background-image: url("../media/team_designer_2.png");
+
+}
+.box3:hover {
+    background-image: url("../media/awards.jpg");
+}
+
+.box4:hover {
+    background-image: url("../media/top_projekt.jpg");
+}
+.box1, .box2, .box3, .box4 {
+    height: 50vh;
+}
+
+/*reusable grid container declaration*/
+.grid-container {
+    /* margin: 0; */
+    display: grid;
+
+}
+
+
+/* grid definition class related to om oss page*/
+
+.staff-grid {
+
+    display: grid;
+
+}
+
+
+.col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-item {
+
+    color: black;
+    text-align: justify;
+
+}
+
+.grid-item1 {
+  display: block;
+  vertical-align: middle;
+}
+
+
+.img-centered {
+    display: block;
+    margin: auto;
+
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+h1 {
+    text-align: center;
+    color: #c6a530;
+    border: 1px solid #c6a530;
+}
+
+/* for screen sizes larger than mobile*/
+@media screen and (min-width: 600px) {
+
+    /*responsive nav bar in desktop mode */
+    #menu-icon {
+        display: none;
+        float: none;
+    }
+    .topnav ul li a {
+        padding-right: 4em;
+        display: inline-block;
+
+    }
+    .active {
+        background-color: #c6a530;
+        color: black;
+    }
+    .topnav ul li a:hover {
+        background-color: #c6a530;
+        color: black;
+    }
+    .nav ul {
+        padding-top: 2em;
+        padding-right: 2em;
+    }
+    .headerlogo {
+        margin: auto;
+        margin-left: 4em;
+        float: left;
+        height: 8em;
+        width: auto;
+    }
+   /*home page specific for desktops*/
+    .grid-container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .box1, .box2, .box3, .box4 {
+        min-width: 50vw;
+        min-height: 50vh;
+    }
+    .box2, .box3 {
+        background-color: #c6a530ab ;
+    }
+
+    .box1, .box4 {
+    background-color: #c6a530 ;
+    }
+
+    .img-centered-stack {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col-4a {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .gap {
+        grid-column-gap: 1em;
+    }
+
+    .small {
+        /* width: 25%; */
+        height: auto;
+    }
+    .grid-item1 {
+      display: block;
+      vertical-align: middle;
+    }
+    .grid-item2 {
+height: auto;
+      max-width: 60&;
+      margin-left: auto;
+      margin-right: auto;
+      float: center;
+    }
+
+}

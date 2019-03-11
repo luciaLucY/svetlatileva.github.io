@@ -1,0 +1,492 @@
+
+/*fonts related declaration*/
+@import url('https://fonts.googleapis.com/css?family=Arimo|Lato');
+
+/*general class declarations for the entire website*/
+body {
+    background-color: #f7f7f7;
+    margin-top: 8em;
+    font-family: Lato;
+}
+
+main {
+  margin: auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 0em;
+    color: #f7f7f7;
+}
+
+a:hover {
+    color: black;
+}
+
+.centertext {
+    text-align: center;
+    align-content: center;
+}
+
+.allbox {
+    /* this reusable class is used for background images*/
+    background-position: center;
+    background-size: cover;
+}
+.active {
+    background-color: #c6a530;
+    color: white;
+}
+
+.toright{
+    /*this reusable class is used to align an element to the right*/
+    margin-right: 1em;
+    float: right;
+}
+
+.goldborder {
+    max-width: 100vw;
+    padding: 2em;
+    border: 1px solid #c6a530;
+}
+/*Responsive nav bar declarations*/
+    /* nav a:visited{
+        color: black;
+    } */
+
+    nav {
+        float: right;
+        margin-top: 1em;
+
+    }
+
+    .headerlogo {
+        /* float: left;
+        height: 4em;
+        width: auto;
+        left: 0em; */
+        vertical-align: left;
+        padding-left: 0em;
+        height: 4em;
+        width: auto;
+    }
+
+    .hire {
+      /* float: left; *
+      height: 0.9em;
+      width: auto;
+      text-align: center;
+      /* position: relative; *
+      left: 0.1em;
+      top: 1.3em;
+      background-color: #c6a530ab;
+      border: 2px solid black;
+      padding: 1em;
+      font-size: 16px;*/
+
+      float: left; */
+
+      /* left: 7em; */
+      top: 1.3em;
+      background-color: #c6a530ab;
+      border: 2px solid black;
+      padding: 1.2em;
+      font-size: 16px;
+
+    }
+    .hire:hover {
+        background-color: darkgrey;
+        color: white;
+    }
+
+    .topnav {
+        background-color: #f7f7f775;
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+    }
+
+    .topnav ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        left: 0em;
+    }
+    .topnav ul li {
+        display: inline;
+        /* text-align: center; */
+    }
+    .topnav ul li a {
+        color:black;
+        padding: 0.5em;
+        text-decoration: none;
+        display: none;
+    }
+    .topnav.dropped ul li a:hover {
+        background-color: #c6a530;
+        color: black;
+    }
+
+    /* .topnav ul li:first-child  a:hover {
+        background-color: #ffffff00;
+    } */
+
+    /* .topnav ul li:first-child  a {
+        display: inline-block;
+        padding: 0;
+    } */
+
+    #menu-icon {
+        margin-top: 1em;
+        margin-right: 1em;
+        float: right;
+        display: block;
+    }
+
+    .topnav.dropped ul li a {
+        display: block;
+        /* position: relative;
+        float: right;
+        margin: 0em;
+        right: 1em;
+        top: 1em; */
+    }
+
+    .topnav.dropped #menu-icon {
+        position: absolute;
+        right: 0em;
+        top: 0em;
+        background-color: #ffffff00;
+    }
+
+
+
+
+/*=========================all footer related formatting==============*/
+footer ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-inline-start: 0em;
+  text-align: center;
+  /* background-color: #c6a530; */
+  color: white;
+  }
+
+.footer li {
+  list-style: none;
+}
+
+.footgrid {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+}
+
+.footgrid-item {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    font-size: 60%;
+}
+
+.footgrid-item ul li a:visited {
+    color: black;
+    list-style: none;
+}
+.footgrid-item ul li {
+    color: black;
+    list-style: none;
+}
+
+.footborder {
+    background-color: #a1a1a1;
+    border: 1px solid #c6a530;
+}
+.footborder2 {
+    background-color: #cecece;
+    border: 1px solid #c6a530;
+}
+
+/* h2 formatting for home page top and bottom rows*/
+
+.top h2 {
+    top: 40vh;
+    transform: translateY(-50%);
+    margin: 30px 20px auto 30px;
+    font-family: Arimo;
+}
+.bottom h2 {
+    top: 85vh;
+    transform: translateY(-50%);
+    margin: 30px 20px auto 30px;
+    font-family: Arimo;
+
+}
+
+/* home page related classes*/
+.box1, .box3 {
+    background-color: #c6a530;
+}
+.box2, .box4 {
+    background-color: #c6a530ab;
+ }
+
+.box1:hover {
+        background-image: url("media/designall1.jpg");
+}
+.box2:hover {
+    background-image: url("media/cvgraph2.jpg");
+
+}
+.box3:hover {
+    background-image: url("media/vdesign3.jpg");
+}
+
+.box4:hover {
+    background-image: url("media/contacts.jpg");
+}
+.box1, .box2, .box3, .box4 {
+    height: 50vh;
+}
+
+/*reusable grid container declaration*/
+.grid-container {
+    margin: 0;
+    display: grid;
+
+}
+.strong {
+font-weight: bold;
+}
+
+
+/* grid definition class related to About page*/
+
+.staff-grid {
+
+    display: grid;
+
+}
+
+
+.col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-item {
+
+    color: black;
+    text-align: justify;
+
+}
+.img-centered {
+    display: block;
+    margin: auto;
+
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+
+}
+.img-fluid-small {
+    /* max-width: 50%;
+    height: auto; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #c6a530;
+    border: 1px solid #c6a530;
+}
+h3 {
+    text-align: center;
+    color: black;
+    border: 1px solid #c6a530;
+}
+
+/* for screen sizes larger than mobile*/
+@media screen and (min-width: 600px) {
+
+    /*responsive nav bar in desktop mode */
+    #menu-icon {
+        display: none;
+        float: none;
+    }
+    .topnav ul li a {
+        padding-right: 1em;
+        display: inline-block;
+        list-style: none;
+
+    }
+    .active {
+        background-color: #c6a530;
+        color: black;
+    }
+    .topnav ul li a:hover {
+        background-color: #c6a530;
+        color: black;
+    }
+    .nav ul {
+        padding-top: 2em;
+        padding-right: 2em;
+    }
+    .headerlogo {
+        margin: auto;
+        margin-left: 1em;
+        float: left;
+        height: 6em;
+        width: auto;
+    }
+
+    .hire {
+      height: 1em;
+      width: auto;
+      text-align: center;
+      position: absolute;
+      left: 22em;
+      top: 1em;
+      background-color: #c6a530ab;
+      border: 2px solid black;
+      padding: 1em;
+      font-size: 18px;
+    }
+    .hire:hover {
+        background-color: darkgrey;
+        color: black;
+    }
+
+
+
+    /*==================== Competences ========*/
+
+        #gap {
+        /* width: 50%; */
+        margin: 0em;
+        height: 0px;
+        border: 2px solid #ccc;
+      }
+
+        .bars {
+        width: auto;
+        padding: 0em;
+        margin: 0px auto;
+        background: #ccc;
+        /* border: 1px solid black; */
+        height: 100%
+        /* margin: 2em; */
+      }
+      .barsi {
+        height: auto;
+        background: gray;
+        margin: 0em;
+        padding-left: 1em;
+        grid-gap: 0em;
+      }
+
+
+      #html {
+        height: auto;
+        /*background: gray; */
+        width: 20vw;
+        /* margin-left: 2em; */
+      }
+      #js {
+        height: 100%;
+        /*background: gray; */
+        width: 4%;
+        /* margin-left: 2em; */
+      }
+
+
+
+
+      /* ========  zoom the images =============*/
+
+    .zoom {
+      /* padding: 50px;
+      background-color: green; */
+      transition: transform .2s; /* Animation */
+      /* width: 200px;
+      height: 200px; */
+      margin: 0 auto;
+    }
+
+    .zoom:hover {
+      transform: scale(1.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    /*==================== END ZOOM Images ================ */
+
+
+
+
+
+   /*=========== home page specific for desktops ======*/
+
+
+    .grid-container {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .box1, .box2, .box3, .box4 {
+        min-width: 50vw;
+        min-height: 50vh;
+    }
+    .box2, .box3 {
+        background-color: #c6a530ab ;
+    }
+
+    .box1, .box4 {
+    background-color: #c6a530 ;
+    }
+
+    /* .hire {
+      font-size: 100%;
+      text-align: center;
+      position: absolute;
+      left: 28em;
+      top: 3em;
+      text-emphasis-style: filled;
+      background-color: #c6a530;
+      border: 1px solid #c6a530;
+    } */
+
+    .img-centered-stack {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .col-4a {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .col-5a {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .gap {
+        grid-column-gap: 1em;
+    }
+
+    .small {
+        /* width: 25%; */
+        height: auto;
+    }
+
+}

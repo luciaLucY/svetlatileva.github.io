@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Top Projects</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="normalized.css">
+  <link rel="stylesheet" href="stylecont.css">
+</head>
+
+<body>
+  <div class="grid-master">
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <ul>
+          <li>
+            <a href="index.html" ><img src="media/logost.png" alt="Svetla's monogram" class="headerlogo "></a>
+          </li>
+          <li><a href="dprojects.html" class="toright active">Design Projects</a></li>
+          <li><a href="vprojects.html" class="toright">Video Projects</a></li>
+          <!-- <li><a href="projektNavBarMy.html" class="toright active">Projects</a></li> -->
+
+          <li><a href="about.html" class="toright">About</a></li>
+          <li><a href="contacts.html" class="toright">Contacts</a></li>
+          <li><a href="javascript:void(0);"  id="menu-icon" onclick="navToggle()">
+            <i class="material-icons">menu</i></a></li>
+        </ul>
+      </nav>
+    <header>
+
+    <main>
+      <h1>Top Projects</h1>
+      <h3>DESIGN</h3>
+      <div class="grid-image-container1">
+
+        <div class ="grid-item1">
+          <p>Illustrator</p>
+          <img src="media/50icons.jpg" alt="Svetla Tileva's icon projects" class="img-fluid zoom" id="content">
+        <!-- </div>-->
+      <!-- </div>
+      <div> -->
+
+          <h3>Every designer sooner or later has the challenge to build first 50 icons as fast as possible. This is mine output</h3>
+        </div>
+
+        <div class ="grid-item1">
+          <p>Illustrator / Photoshop</p>
+          <img src="media/designall.png" alt="Svetla Tileva's design projects" class="img-fluid zoom" id="content">
+        <!-- </div>
+        <div> -->
+          <h3>
+            Logos, flyers, business cards, mockups</h3>
+        </div>
+
+          <div class ="grid-item1">
+            <p>PhotoShop</p>
+            <img src="media/loreen_poster.jpg" alt="poster of Loreen's concert" class="img-fluid zoom">
+
+            <h3>
+              A poster of imaginable concert of the Swedish singer Loreen</h3>
+          </div>
+
+          <div class ="grid-item1">
+            <p>PhotoShop / Illustrator</p>
+            <img src="media/BusinessIdentity.png" alt="Business Identity" class="img-fluid zoom">
+
+            <h3>
+              Business Identity office items</h3>
+          </div>
+
+        <div class ="grid-item1">
+            <p>InDesign</p>
+            <img src="media/indesign.jpg" alt="image of InDesign project" class="img-fluid zoom">
+            <h3>Immaginable Sport Magazine, invented as a part of the course project</h3>
+          </div>
+
+          <div class ="grid-item1">
+              <p>Illustrator</p>
+              <img src="media/MartaFree.jpg" alt="image of InDesign project" class="img-fluid zoom">
+              <h3>Different logo variations while searching of the best fitting the clients idea</h3>
+            </div>
+
+          <div class ="grid-item1">
+              <p>UI Design</p>
+              <img src="media/UIdesign.jpg" alt="image of InDesign project" class="img-fluid zoom">
+              <h3>Redesign project of an old site</h3>
+            </div>
+
+            <div class ="grid-item1">
+                <p>UX Design / IndigoStudio</p>
+                <img src="media/UXdesign.jpg" alt="image of InDesign project" class="img-fluid zoom">
+                <h3>UX design of an app with all the steps to do, including the user verivication</h3>
+              </div>
+
+      </div>
+
+
+
+      </div>
+    </main>
+
+    <footer class="footgrid">
+        <div class="footgrid-item footborder"> copyright &copy; 2018 <p>stileva12@gmail.com </p></div>
+        <div class="footgrid-item footborder2">
+            <ul>
+                <li> <a href="index.html" > Home </a> </li>
+                <li> <a href="dprojects.html" class="active"> Design Projects</a> </li>
+                <li> <a href="vprojects.html"> Video Projects</a> </li>
+                <li> <a href="about.html"> About </a> </li>
+                <li> <a href="contacts.html"> Contacts</a> </li>
+            </ul>
+        </div>
+        <div class="footgrid-item footborder">Turning Torso, <br> Malmö, Sweden </div>
+        <div class="footgrid-item footborder2">All rights reserved by Svetla Tileva</div>
+
+    </footer>
+
+    <script>
+      /* detta år en flerradskomentar i JavaScript*/
+      //detta är en enradskomentar i JS
+      /*
+        En funktion som läger till/tar bort klassen "dropped" på .topnav när användaren trycker på meny-ikonen
+      */
+      function navToggle() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " dropped";
+          //mellan slag innan dropped är viktigt
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </div>
+</body>
+</html>

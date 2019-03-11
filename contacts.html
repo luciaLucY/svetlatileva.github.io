@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contacts</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="normalized.css">
+  <link rel="stylesheet" href="stylecont.css">
+</head>
+<body>
+
+  <div class="grid-master">
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <ul>
+
+            <a href="index.html" ><img src="media/logost.png" alt="Svetla Tileva monogram" class="headerlogo"></a>
+
+          <li><a href="dprojects.html" class="toright">Design Projects</a></li>
+          <li><a href="vprojects.html" class="toright">Video Projects</a></li>
+          <li><a href="about.html" class="toright">About</a></li>
+          <li><a href="contacts.html" class="toright active">Contacts</a></li>
+          <li><a href="javascript:void(0);"  id="menu-icon" onclick="navToggle()">
+            <i class="material-icons">menu</i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Contacts</h1>
+      <div class="grid-image-container1">
+
+        <div class ="grid-item">
+          <img src="media/minc.png" alt="Minc Malmö building image" class="img-fluid1">
+        </div>
+
+        <div class ="grid-item2 img-fluid2" >
+          <br><br>
+            <div><i class="material-icons">
+                local_phone</i><a href="tel:+46739170004" rel="nofollow">+46-739170004</a></div> <!--A snippet to make direct call-->
+
+
+            <div><i class="material-icons">
+              email</i>
+              <a href="mailto:stileva12@gmail.com" target="_blank">Mail me </a></div>
+              <br><br>
+
+              <div  id="tidtabel">
+              <h3>Working hours:</h3>
+              <h5>mo-fre: 9-16</h5>
+                <br> Meeting agreement when requested
+
+              </div>
+              <br><br>
+        </div>
+
+        <div class ="grid-item">
+          <!-- <a href="https://goo.gl/maps/n3bvGWZGMwF2" -->
+          <iframe class="img-fluid2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4506.896232096383!2d12.996819785648626!3d55.61161801650002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x258f6dde97c9cb49!2sMinc!5e0!3m2!1sen!2sse!4v1551997008608" width="600" height="450" align="center" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <a
+           alt="google maps link">
+          </a>
+      </div>
+
+
+        <!--div closes class="grid-image-container1"-->
+
+
+        <!-- FOR the SUBSCRIPTION FORM -->
+
+      <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name ...">
+
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your email..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write me something here ..." style="height:100px"></textarea>
+
+            <!-- <input type="submit" value="Submit">  -->
+            <form method="post" action="mailto:stileva12@gmail.com" >
+                <input type="submit" value="SEND E-mail" />
+            </form>
+
+          </form>
+      </div>
+    </div> <!--div closes class="grid-image-container1"-->
+    </main>
+
+    <footer class="footgrid">
+        <div class="footgrid-item footborder"> copyright &copy; 2018 <p>stileva12@gmail.com </a></div>
+        <div class="footgrid-item footborder2">
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="dprojects.html"> Design Projects </a> </li>
+                <li> <a href="vprojects.html"> Video Projects </a> </li>
+                <li> <a href="about.html"> About </a> </li>
+                <li> <a href="contacts.html" class="active"> Contacts</a> </li>
+            </ul>
+        </div>
+        <div class="footgrid-item footborder">Svetla Tileva @MINC, <br> Malmö, Sweden </div>
+        <div class="footgrid-item footborder2">All rights reserved by Svetla Tileva</div>
+
+    </footer>
+
+    <script>
+
+      function navToggle() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " dropped";
+          //mellan slag innan dropped är viktigt
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </div> <!--div that closes the grid-master -->
+</body>
+</html>
